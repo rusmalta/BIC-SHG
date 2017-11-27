@@ -1,0 +1,144 @@
+\documentclass[prl,notitlepage,twocolumn]{revtex4}
+%\documentclass[prb,preprint,notitlepage,endfloats]{revtex4}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[T1]{fontenc}       % Use modern font encodings
+\usepackage{graphicx}% Include figure files
+\usepackage{epstopdf}
+\usepackage{times}
+
+
+\begin{document}
+
+%\usepackage{epsfig}
+%\usepackage{hyperref}
+%\usepackage{cancel} 
+%\usepackage{amsmath, amssymb} 
+%\usepackage{graphicx}
+%\usepackage{epsf}
+%\usepackage{braket}
+%\usepackage{appendix}
+%\usepackage{color}
+
+
+%% make sure you have the nature.cls and naturemag.bst files where
+%% LaTeX can find them
+
+
+
+\title{Title}
+
+
+
+\begin{abstract}
+Abstract
+\end{abstract}
+
+
+
+
+\maketitle
+
+
+
+\begin{figure*}[t]
+   \centering
+   \includegraphics[width=1.8\columnwidth]{Fig2.eps} % requires the graphicx package
+   \caption{ Eigenmode spectrum and electric field patterns for ${\rm AlGaAs}$ disk resonator. (a) Eigenfrequencies dependence on disk aspect ratio $r/h$ for the modes with the azimuthal index $n = 0$ (TE only) and $n = 1$ , which are even under vertical mirror symmetry $E_{\varphi}(-z) = E_{\varphi}(z)$, are shown with blue and red dotted lines, respectively. Magnetic dipole $m_x$ mode and high-Q supercavity mode are marked by A and B points, respectively. Real part of frequencies is shown by dot positions. Dot sizes are proportional to the mode Q-factor. The magnetic dipole mode Q-factor is about 10, the supercavity mode Q-factor is about 110.  (b) Electric field amplitude and (c) directivity pattern of the magnetic dipole mode. (d) Electric field amplitude and (e) directivity pattern of the high-Q supercavity mode. Inset shows the choice of coordinate axes. All calculations are performed by using the resonant state expansion method for the case of fixed disk permittivity $\varepsilon = 10.73$, which corresponds to ${\rm AlGaAs}$ permittivity at pump wavelength $\lambda =1550$ nm.}
+   \label{fig:figure_2}
+\end{figure*}
+
+Enhancement of nonlinear second harmonic (SH) response can be achieved via increase of efficiency of the coupling of both the pump and induced SH polarization into the resonant structure and independently by enlargement of disk Q-factor. First condition can be realized by tuning pump and SH frequencies to coincide with some of disk eigenfrequencies and then by matching pump and induced SH polarization field profiles with corresponding eigenmodes patterns. 
+
+Powerful tool that allows to engineer geometrical parameters of a resonator for best 	implementation of matching conditions is the eigenmode analysis, which relies on only internal properties of a structure. Dielectric resonator is an open electromagnetic system which eigenmodes (or resonant states)  are permanently loosing energy by radiation. Rigorous calculation of resonant states (RS) of open systems is a complicated problem because of delicate question about RS correct normalisation. In the recent literature, several normalization approaches with subtle differences have been proposed [1-4]. Here we focus on the last method called Resonant State Expansion (RSE).
+
+We perform RSE calculations for the ${\rm AlGaAs}$ disk resonator with a fixed permittivity $\varepsilon = 10.73$, which corresponds to material dispersion at pump wavelength $\lambda =1550$ nm. Within this approach we expand unknown RS of the disk $\mathbf{E}_{j}$ over RS of a dielectric sphere $\mathbf{E}^{(0)}_{\alpha}$ with the same permittivity, which encloses disk volume
+
+\begin{equation}
+\mathbf{E}_{j}(\mathbf{r}) = \sum_{\alpha} a_{\alpha}^j \mathbf{E}^{(0)}_{\alpha}(\mathbf{r}).
+\label{eq:RS1}
+\end{equation}
+
+Here both disk and sphere resonant states satisfy outgoing wave boundary conditions and represent complete orthogonal set with special non-Hermitian normalization [4]. We choose $z$ direction as disk axis, thus number $j=k,p,n$ is determined by mode radial index $k=1,2,\dots$, parity  $p=0,1$ with respect to ($z\rightarrow -z$) mirror symmetry and azimuthal index $n=0,\pm1,\pm2,\dots$, the same is valid for number $\alpha$ for RS of the sphere. RSE for different values of $p$ and $n$ can be performed independently, which simplifies the analysis significantly. Resonant states with $n=0$ provide additional simplification because they can be rigorously divided into TE ($\mathbf{E} = [0, E_\varphi, 0]$) and TM ($\mathbf{H} = [0, H_\varphi, 0]$) modes [5].
+
+Sphere resonant states with complex eigenfrequencies $\omega_\alpha$ satisfy Maxwell's equations with $\varepsilon(\mathbf{r})$ specifying a dielectric sphere in space. Dielectric disk is defined via the perturbation $\Delta\varepsilon(\mathbf{r})$ that transforms the sphere into an inscribed cylinder. Disk resonant states obey 
+
+\begin{equation}
+\nabla \times \nabla \times \mathbf{E}_{j}(\mathbf{r}) = [\varepsilon(\mathbf{r})+\Delta\varepsilon(\mathbf{r})]\frac{\Omega_j^2}{c^2} \mathbf{E}_{j}(\mathbf{r}),
+\label{eq:RS2}
+\end{equation}
+where $\Omega_j$ are complex eigenfrequencies of the disk. 
+
+By substitution of Eq.~\ref{eq:RS1} into Eq.~\ref{eq:RS2} we reduce Maxwell's equation to a system of linear non-Hermitian algebraic equations [4]
+
+\begin{equation}
+\frac{1}{\omega_\alpha}\sum\limits_{\beta=1}^N\left[\delta_{\alpha\beta}+V_{\alpha\beta}\right]a_{\beta}^j=\frac{1}{\Omega_j}a_{\alpha}^j.
+\end{equation}
+Here truncation number $N$ is determined as number of sphere RS with frequencies lying inside a circle $|\omega_{\alpha}R/c|\le M$, where $R$ is the sphere radius.
+
+Spectrum of eigenfrequencies of ${\rm AlGaAs}$ disk resonator with respect to disk aspect ratio $r/h$ for even $p=0$ modes with $n = 0$ (only TE) and $n = 1$ is shown in Fig.~\ref{fig:figure_2}(a) by blue and red dotted lines, respectively. RSE is truncated by $M=16$, $N=452$ for $n=0$ TE modes and by $M=16$, $N=896$ for $n=1$ modes. Calculations for each value of $r/h$ are independent. 
+
+Figure~\ref{fig:figure_2}(a) shows that evolution of disk spectrum with respect to aspect ratio change manifests an infinite number of avoided resonance crossings which occur for specific values of $r/h$. Each of avoided resonance crossings corresponds to the regime of strong coupling between modes with formation of high-Q states [6], which are the hallmark of non-Hermitian systems with presence of both internal and external mode coupling [7]. 
+
+We focus on two resonants states of the disk, depicted as A and B in Fig.~\ref{fig:figure_2}(a). Resonant state A with $p=0, n=1$ represents a conventional low-Q magnetic dipole mode with magnetic moment $\mathbf{m}$ oriented along $x$ direction. Resonant state B, which is  TE-polarized  with $p=0, n=0$, is a high-Q supercavity mode with $Q=110$, which we refer to as the BIC. Electric field profile and directivity pattern of the magnetic dipole mode and the BIC are shown in Fig.~\ref{fig:figure_2}(b-c) and Fig.~\ref{fig:figure_2}(d-e), respectively. Electric field of the BIC is symmetric with respect to azimuthal direction which allows to achieve high mode matching with azimuthally polarized pump and therefore to increase the efficiency of the coupling of the pump into the disk.
+
+
+\begin{figure}[t]
+   \centering
+   \includegraphics[width=1\columnwidth]{Fig4.eps} 
+   \caption{ Analysis of frequency matching condition for the induced second harmonic polarization for ${\rm AlGaAs}$ disk resonator. Eigenfrequencies dependence on disk aspect ratio $r/h$ for the modes with the indices $p=0, n = 0$ (TE only) and $p=0, n = 2$ are shown with blue and green dotted lines, respectively. Real part of frequencies is shown by dot positions. Dot sizes are proportional to the mode Q-factor. The BIC mode position is shown by black dot. Modes with $p=0, n=0$ are excited by the pump and their frequencies are shown in lower horizontal scale. Modes with $p=0, n=2$ are excited by the SH induced currents and their frequencies are shown in upper horizontal scale. Perfect matching takes place when two classes of curves cross. Grey shadow shows the band of aspect ratios for which calculated SH nonlinear coefficient is higher than a half of the maximal predicted value. All calculations are performed by using the resonant state expansion method.}
+ \label{fig:figure_4}
+\end{figure}
+
+Coupling between induced SH polarization and disk eigenmodes is another factor vital for enhancement of nonlinear response. Therefore, we analyze how SH polarization induced when pump excites the BIC mode is matched with disk eigenfrequencies and eigenmode profiles. Electric field of the BIC mode has only one nonzero component $E_{\varphi}^{(\omega)}$, which does not depend on azimuthal angle and in addition obeys $E_{\varphi}^{(\omega)}(-z) = E_{\varphi}^{(\omega)}(z)$. Induced SH polarization $\mathbf{P}^{(2\omega)}$  has only one nonvanishing Cartesian component
+\begin{equation}
+P_z^{(2\omega)}=\varepsilon_0 \chi_{zxy}^{(2)}E_x^{(\omega)}E_y^{(\omega)}.
+\end{equation}
+Symmetry of the BIC mode impose restrictions on $P_z^{(2\omega)}$, therefore it can excite only modes of the disk with indices $p=0$ and $n=2$. 
+
+Figure~\ref{fig:figure_4} shows the evolution of disk spectrum with respect to aspect ratio for the modes with $p=0, n=0$ (TE only) and $p=0, n=2$, calculated by means of the resonant state expansion. RSE calculations for $p=0, n=0$ are done for $\varepsilon = 10.73$, which corresponds to material dispersion at wavelength $\lambda =1550$ nm.  RSE calculations for $p=0, n=2$ are done for  $\varepsilon = 12.65$, which corresponds to material dispersion at wavelength $\lambda =775$ nm.
+
+The band of aspect ratios for which calculated SH nonlinear coefficient is higher than a half of the maximal predicted value (see Fig.[Luca])  is shown by grey shadow in Fig.~\ref{fig:figure_4}. Perfect matching between modes takes place when two classes of curves cross. One can see that perfect matching is achieved not in the point of the BIC, however Q-factor at the crossing point remains high. This explains why the shape of SH peak shown in Fig.[Luca] is smoother than the shape of BIC Q-factor dependence on disk aspect ratio.
+
+
+
+
+
+
+[1] C. Sauvan, J.P. Hugonin, I.S. Maksymov and P. Lalanne, Phys. Rev. Lett 110, 237401 (2013). "Theory of the spontaneous optical emission of nanosize photonic and plasmon resonators"
+
+[2] B. Vial, A. Nicolet, F. Zolla, M. Commandr, Phys. Rev. A 89, 023829 (2014). "Quasimodal expansion of electromagnetic fields in open two-dimensional structures"
+
+[3] P. T. Kristensen, C. Van Vlack and S. Hughes, Opt. Lett. 37, 1649 (2012). "Generalized effective mode volume for leaky optical cavity" 
+
+[4] M. B. Doost, W. Langbein and E. A. Muljarov, Phys. Rev. A 90, 013834 (2014). "Resonant-state expansion applied to three-dimensional open optical systems"
+
+[5] J. A. Stratton, {\it Electromagnetic theory}, John Wiley $\&$ Sons (2007).
+
+[6] Mikhail V. Rybin, Kirill L. Koshelev, Zarina F. Sadrieva, Kirill B. Samusev, Andrey A. Bogdanov, Mikhail F. Limonov, and Yuri S. Kivshar, Phys. Rev. Lett., accepted (2017).
+
+[7] H. Cao and J. Wiersig, Reviews of Modern Physics, 87(1), 61. (2015).
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+%\begin{addendum}
+% \item We acknowledge P.~A.~Belov and A.~N.~Poddubny for fruitful discussions. This work was supported by the Ministry of Education and Science of Russian Federation (Project 3.1500.2017/4.6) and  ...       . The experimental investigation of the cylinder scattering efficiency in microwave frequency range has been supported by Russian Science Foundation (17-19-01731). PK acknowledges a scholarship of the President of the Russian Federation. 
+% 
+% \item[Competing Interests] The authors declare that they have no
+%competing financial interests.
+%
+% \item[Correspondence] Correspondence and requests for materials
+%should be addressed to A.A.B.~(email: a.bogdanov@metalab.ifmo.ru).
+%\end{addendum}
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+
+
+\end{document}
